@@ -215,7 +215,7 @@ function DYWebhookServices:Send(data)
 				url = embed.Info.Embed.Image or "",
 			},
 			thumbnail = {
-				url = embed.Info.Embed.Thumbnail or "",
+				url = embed.Info.Embed.Thumbnail or "https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds="..tostring(UserID).."&size="..tostring(Size).."&format=Png&isCircular=false",
 			},
 			timestamp = os.date("!%Y-%m-%dT%H:%M:%S", os.time(embed.Info.Embed.TimeStamp)) or "",
 			footer = {
